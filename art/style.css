@@ -1,0 +1,184 @@
+* {
+  box-sizing: border-box;
+}
+
+/* header  */
+body {
+  padding: 0;
+  margin-top: 30px;
+}
+
+header {
+  position: relative;
+  height: auto;
+  width: 70%;
+  margin: auto;
+}
+header > a {
+  text-decoration: none;
+  color: black;
+  font-size: 2em;
+  font-family: monospace;
+  padding: 10px;
+}
+header > a:hover {
+  background-color: rgb(146, 145, 145);
+  color: white;
+}
+.art {
+  float: left;
+}
+.about {
+  float: right;
+}
+
+/* image */
+
+.imag {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  margin-top: 50px;
+  width: 100%;
+  height: auto;
+}
+
+.imag > div {
+  height: 500px;
+}
+.imag img {
+  width: 100%;
+}
+.d1 > img {
+  height: 800px;
+}
+.d2 > img {
+  height: 640px;
+}
+.d3 > img {
+  height: 733px;
+}
+.d4 > img {
+  height: 758px;
+}
+.d5 {
+  margin-top: 140px;
+}
+.d5 > img {
+  height: 917px;
+}
+.d6 > img {
+  height: 825px;
+}
+
+.d6 {
+  margin-top: 233px;
+}
+.d4 {
+  margin-top: 300px;
+}
+
+/* about  */
+
+.ab {
+  background-color: rgba(211, 211, 211, 0.959);
+}
+.ab > h2 {
+  margin-top: 300px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+}
+.photo {
+  width: 300px;
+  height: auto;
+  margin: auto;
+}
+.photo > img {
+  width: 100%;
+}
+
+.info {
+  width: 60%;
+  text-align: justify;
+  margin: auto;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 20px;
+}
+.logo {
+  padding-top: 30px;
+  text-align: center;
+  color: red;
+  font-size: 1.3em;
+}
+form {
+  margin-top: 40px;
+}
+
+.form {
+  margin: auto;
+  width: 50%;
+  text-align: center;
+}
+.name,
+.email,
+.message {
+  width: 100%;
+  padding: 5px;
+}
+
+.n {
+  font-size: 1.2em;
+}
+.send {
+  width: 100px;
+  background-color: black;
+  border: 0;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+.send:hover {
+  opacity: 0.7;
+}
+
+.tel {
+  margin-top: 40px;
+  margin-bottom: 50px;
+  text-align: center;
+  font-family: monospace;
+  font-size: large;
+}
+
+@media screen and (max-width: 720px) {
+  .imag {
+    display: block;
+  }
+  .ab > h2 {
+    margin-top: 400px;
+  }
+  .photo {
+    position: relative;
+    left: 5%;
+  }
+  .photo > img {
+    width: 200px;
+  }
+  .info {
+    width: 80%;
+  }
+  .d2 {
+    margin-top: 280px;
+  }
+  .d3 {
+    margin-top: 140px;
+  }
+  .d4 {
+    margin-top: 230px;
+  }
+  .d5 {
+    margin-top: 250px;
+  }
+  .d6 {
+    margin-top: 400px;
+  }
+}

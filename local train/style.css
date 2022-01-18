@@ -1,0 +1,335 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+/*  navbar  */
+
+.nav {
+  list-style-type: none;
+  background-color: black;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  padding-left: 10px;
+  font-size: small;
+  padding-top: 10px;
+}
+.nav li {
+  height: 30px;
+  padding-right: 20px;
+  background-color: black;
+
+  float: left;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+}
+.nav a:hover {
+  opacity: 0.6;
+}
+.search {
+  position: absolute;
+  width: 80px;
+  right: 10px;
+}
+.more {
+  background-color: black;
+  border: 0px;
+  color: white;
+}
+
+/* poster   */
+.image {
+  text-align: center;
+}
+.image img {
+  margin-top: 50px;
+  width: 90%;
+}
+
+/* THE LOCAL TRAIN SECTION */
+
+.band h1 {
+  margin-top: 40px;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1.8em;
+}
+.band > .logo {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  color: rgb(88, 88, 88);
+  margin-bottom: 20px;
+}
+
+.info {
+  width: 1000px;
+  text-align: justify;
+  margin: auto;
+  height: 150px;
+  font-family: monospace;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 140px 140px 140px 140px;
+  justify-content: center;
+  grid-column-gap: 80px;
+}
+.grid img {
+  width: 100%;
+}
+
+.grid div {
+  text-align: center;
+}
+
+/* media query */
+@media screen and (max-width: 1000px) {
+  .info {
+    width: 700px;
+    height: 200px;
+    text-align: justify;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .info {
+    width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: 110px 110px 110px 110px;
+    grid-column-gap: 5%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .grid {
+    display: block;
+    margin: auto;
+    width: 70%;
+  }
+  .grid div {
+    margin-bottom: 20px;
+  }
+}
+
+/* TICKETS */
+
+.ticket {
+  background-color: black;
+  color: white;
+  margin-top: 60px;
+  width: 80%; /* media */
+  margin: auto;
+  font-family: monospace;
+}
+.ticket h1 {
+  text-align: center;
+  padding-top: 50px;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: lighter;
+}
+.ticket > .logo {
+  text-align: center;
+  color: rgb(146, 137, 137);
+  font-style: italic;
+}
+
+.book {
+  color: black;
+  width: 600px;
+  margin: auto;
+  background-color: white;
+  height: 100px;
+  padding: 10px;
+}
+
+.s1,
+.s2 {
+  margin-top: 2px;
+  background-color: chocolate;
+  position: absolute;
+  left: 40%;
+  padding: 0px 5px 0px 5px;
+}
+.s3 {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  border-radius: 15px;
+  position: relative;
+  left: 70%;
+}
+
+@media screen and (max-width: 1000px) {
+  .ticket {
+    width: 100%;
+  }
+  .book {
+    width: 60%;
+  }
+}
+
+/* places  */
+
+.place {
+  color: black;
+  width: 600px;
+  display: grid;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 10px;
+}
+.place div {
+  background-color: white;
+}
+.place img {
+  width: 100%;
+  height: 150px;
+}
+.place img:hover {
+  opacity: 0.8;
+}
+.b1 {
+  background-color: black;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin-bottom: 8px;
+  border: 0;
+  position: relative;
+  left: 10px;
+}
+.pp2 {
+  padding: 0px 10px 0px 10px;
+}
+.b1:hover {
+  opacity: 0.5;
+}
+@media screen and (max-width: 720px) {
+  .place {
+    display: block;
+    width: 60%;
+    margin: auto;
+  }
+  .pp2 {
+    margin-bottom: 20px;
+  }
+}
+
+/* contact */
+
+.contact > h1 {
+  margin-top: 80px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 2em;
+  letter-spacing: 6px;
+}
+
+.fan {
+  text-align: center;
+  font-family: monospace;
+  color: rgb(92, 90, 89);
+}
+
+.contact {
+  width: 100%;
+  position: absolute;
+  margin-top: 20px;
+}
+
+.addr {
+  float: left;
+  position: relative;
+  left: 40%;
+}
+
+.fann {
+  float: left;
+  width: 300px;
+  position: relative;
+  left: 40%;
+}
+.name,
+.email {
+  max-width: 40%;
+  margin-left: 20px;
+  padding: 5px;
+}
+
+.message {
+  margin-top: 10px;
+  padding: 5px;
+  margin-left: 20px;
+}
+
+.inside {
+  font-family: monospace;
+  font-size: small;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.send {
+  background-color: black;
+  padding: 5px 10px 5px 10px;
+  color: white;
+  border: 2px solid black;
+}
+.send:hover {
+  opacity: 0.6;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 720px) {
+  .addr,
+  .fann {
+    margin-bottom: 20px;
+    float: none;
+    left: 10%;
+  }
+  .inside {
+    height: auto;
+  }
+
+  .addr {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .name {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .fann {
+    width: auto;
+  }
+}
+
+.imm {
+  margin-top: 300px;
+  width: 100%;
+  height: auto;
+}
+.imm > img {
+  width: 100%;
+}
+footer {
+  background-color: rgb(0, 0, 0);
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-align: center;
+  padding-top: 40px;
+  font-family: monospace;
+}
